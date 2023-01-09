@@ -7,7 +7,7 @@ as a payment gateway, a dashboard for students and teachers, a responsive applic
 
 To run the project setup:-
 
-1 - Clone the project( or readme )
-2 - Go in the client folder
-3 - Open the client folder in cmd
-4 - Run command "npm start"
+1 - Clone the project( or readme )<br>
+2 - Go in the client folder<br>
+3 - Open the client folder in cmd<br>
+4 - Run command "npm start"<br>
