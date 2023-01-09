@@ -1,0 +1,131 @@
+.home_content{
+    display: flex;
+    background: url(https://www.sghms.com/images/pattern1.jpg);
+}
+
+.home_content_speech{
+    font-family: 'Inter';
+    font-weight: 200;
+    padding-top: 30px;
+    padding-left: 170px;
+    padding-bottom: 40px;
+    text-align: justify;
+    padding-right: 30px;
+}
+
+.home_content_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 30px;
+    justify-content: space-evenly;
+    background-color: rgb(249, 249, 244);
+    padding-right: 30px;
+}
+
+h3{
+    font-family: 'Inter';
+    text-align: center;
+}
+
+h2{
+    font-weight: 700;
+    color: salmon;
+    padding-bottom: 30px;
+}
+
+.school_facilities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Quicksand';
+}
+
+.general_facilities{
+    display: flex;
+    /* align-items: center; */
+    padding-left: 100px;
+}
+
+.gen_fac_content{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.academic_facilities{
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.acad_fac_content{
+    /* border: 1px solid; */
+    text-align: center;
+    font-size: 18px;
+    margin-right: 40px;
+    padding-right: 30px;
+}
+
+.image_general_fac{
+    padding-right: 30px;
+    padding-top: 24px;
+}
+
+.feel_school_for_you{
+    /* background: url("https://img1.wsimg.com/isteam/stock/329/:/rs=w:1920,m"); */
+    /* mask-image: url("https://img1.wsimg.com/isteam/stock/329/:/rs=w:1920,m"); */
+    padding-top: 56px;
+    padding-bottom: 56px;
+    object-fit: cover;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.9)), url("https://img1.wsimg.com/isteam/stock/329/:/rs=w:1920,m");
+    /* mask-image: rect; */
+}
+.feelsch_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 273px;
+    text-align: center;
+    margin-left: 120px;
+    padding-left: 24px;
+    margin-right: 120px;
+    padding-right: 24px;
+}
+
+.feel_school_button{
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    padding: 8px 16px 8px 16px;
+}
+
+.feel_school_button:hover{
+    border-color: rgb(236, 252, 252);
+    background-color: rgb(236, 252, 252);
+    /* color: black; */
+}
+
+.feel_school_button > button{
+    color: white;
+    font-family: 'Quicksand','Courier';
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.feel_school_button:hover > button{
+    color: black;
+}
+
+.feel_btn{
+    color: white;
+}
+
+.feel_btn:hover{
+    color: black;
+}

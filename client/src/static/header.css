@@ -1,0 +1,147 @@
+.header{
+    /* position: sticky;
+    z-index: 100;
+    top: 0;
+    background-color: #fff; */
+}
+
+
+.header_school_info{
+    width:100%;
+    /* float:left; */
+    display: flex;
+    padding: 10px;
+    border-top: 8px solid darkred;
+}
+
+
+.header_img_logo{
+    width: 50%;
+    height: auto;
+    /* overflow: hidden; */
+    object-fit: contain;
+}
+
+.header_contact{
+    width: 50%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    /* max-width: 70%; */
+    /* height: auto; */
+}
+
+.header_contact_line1{
+    text-align: left;
+    padding-left: 60px;
+    font-weight: 550;
+}
+
+.header_contact_1{
+    width:50%;
+    font-size: 1.5vw;
+    /* height: auto; */
+    object-fit: contain;
+    /* border: 1px solid; */
+}
+
+.bi{
+    padding-right: 20px;
+}
+
+.header_contacts{
+    font-weight: 300;
+}
+
+.header_contact_line2{
+    display: flex;
+    align-items: center;
+}
+
+.header_contact_2{
+    width:50%;
+    font-size: 1.5vw;
+    /* width: 100%; */
+
+}
+
+.header_links_cont{
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    /* border: 1px solid; */
+}
+
+.header_links_cont:hover{
+    background-color:#002ead;
+    transition: 0.7s all;
+}
+
+.header_links{
+    /* display: flex; */
+    border: 1px solid;
+    align-items: center;
+    justify-items: center;
+    background-color:rgb(19, 168, 31);
+}
+
+.bi-envelope{
+    font-size: 2vw;
+    color: cornflowerblue;
+}
+
+.bi-telephone-forward{
+    font-size: 2vw;
+    color: cornflowerblue;
+}
+.header_img{
+    width:100%;
+    height:auto;
+}
+
+/* @media screen and (max-width:600px){
+    .header_img_logo{
+        width:400px;
+        border: 1px solid;
+        object-fit: contain;
+        display: inline-block;
+    }
+} */
+
+@media screen and (max-width: 768px){
+    .header_contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .header_img_logo
+    {
+        width:100%
+    }
+    .header_links{
+        justify-content: start;
+        background-color: #fff;
+        border: none;
+        overflow: hidden;
+    }
+    .header_links_cont{
+        color: black;
+        cursor: pointer;
+        font-size: 11px;
+    }
+    .header_links_cont:hover{
+        background-color: aquamarine;
+    }
+    .header_contact_1,.header_contact_2,.bi{
+        font-size: 14px;
+        align-content: center;
+    }
+    /* .header_contact_2{
+        font-size: 16px;
+    } */
+    .header_school_info{
+        display: inline-block;
+    }
+}

@@ -1,0 +1,150 @@
+.footer_body {
+    width: 100%;
+    display: flex;
+    padding: 20px 70px 20px 70px;
+    height: auto;
+    background-color: rgb(14, 127, 152);
+    position: absolute;
+}
+
+.footer_block {
+    width: 20%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+
+.footer_block_head {
+    padding-bottom: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 2vw;
+    font-family: "Times New Roman", Times, serif
+}
+
+.footer_block_content {
+    color: #fff;
+    font-size: 1.2vw;
+    text-align: justify;
+}
+
+.footer_border {
+    height: 20px;
+    background-color: rgb(137, 23, 11);
+}
+
+.footer_link_list {
+    list-style-type: none;
+    color: #fff;
+    text-align: left;
+    padding: 0% 0% 0% 0%;
+}
+
+.footer_list_item {
+    color: #fff;
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.footer_list_item:hover {
+    color: rgb(102, 230, 104);
+    text-decoration: none;
+}
+
+.footer_contact_list {
+    color: #fff;
+    list-style-type: "";
+}
+
+.footer_contact_list_item {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.1vw;
+    margin: 10px 10px 10px 10px;
+}
+
+.footer_link_list_li {
+    display: flex;
+    font-size: 1.2vw;
+}
+
+.footer_block_head_mob {
+    
+    font-family: "Quicksand";
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 50px;
+    font-size: 3vw;
+}
+
+.footer_block_mob {
+    width:100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(14, 127, 152);
+    /* position: absolute;
+    bottom: 0; */
+}
+
+.mob_address {
+    display: flex;
+    padding: 10px 10px 10px 10px;
+}
+
+.mob_map {
+    width: 50%;
+    height:150px;
+    object-fit: contain;
+    padding: 0px 5px 0px 5px;
+}
+
+.mob_address_info {
+    width: 50%;
+    padding: 0px 5px 0px 5px;
+    font-size: 2.5vw;
+}
+.footer_iframe{
+    width:100%;
+    height:100%;
+}
+
+#loc_mob {
+    display: none;
+}
+
+
+@media screen and (max-width:800px) {
+    .mob_transparent {
+        display: none;
+    }
+
+    .footer_block {
+        width: 46%;
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+
+    .footer_contact_list_item {
+        font-size: 2vw;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .footer_link_list_li,
+    .bi,
+    .footer_block_content {
+        font-size: 2.5vw;
+    }
+
+    .footer_block_head {
+        font-size: 3vw;
+    }
+
+    .footer_body {
+        padding: 5px 20px 5px 20px;
+    }
+
+    #loc_mob {
+        display: inline-block;
+    }
+
+}
