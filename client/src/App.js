@@ -11,13 +11,13 @@ import Features from './components/Features';
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       {/* <Home /> */}
-      <About/>
+      {/* <About/> */}
       {/* <Login /> */}
       {/* <Infrastructure/> */}
-      <Features/>
-      <Academic/> 
+      {/* <Features/> 
+      // <Academic/>  */}
       <Footer/>
     </div>
   );
