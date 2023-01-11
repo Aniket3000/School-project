@@ -1,131 +1,272 @@
-.home_content{
-    display: flex;
-    background: url(https://www.sghms.com/images/pattern1.jpg);
+.home_content {
+  display: flex;
+  background: url(https://www.sghms.com/images/pattern1.jpg);
 }
 
-.home_content_speech{
-    font-family: 'Inter';
-    font-weight: 200;
-    padding-top: 30px;
-    padding-left: 170px;
-    padding-bottom: 40px;
-    text-align: justify;
-    padding-right: 30px;
+.home_content_speech {
+  font-family: 'Inter';
+  font-weight: 200;
+  padding-top: 30px;
+  padding-left: 170px;
+  padding-bottom: 40px;
+  text-align: justify;
+  padding-right: 30px;
 }
 
-.home_content_login{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-    padding-left: 30px;
-    justify-content: space-evenly;
-    background-color: rgb(249, 249, 244);
-    padding-right: 30px;
+.home_content_login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 30px;
+  justify-content: space-evenly;
+  background-color: rgb(249, 249, 244);
+  padding-right: 30px;
 }
 
-h3{
-    font-family: 'Inter';
-    text-align: center;
+h3 {
+  font-family: 'Inter';
+  text-align: center;
 }
 
-h2{
-    font-weight: 700;
-    color: salmon;
-    padding-bottom: 30px;
+
+.school_facilities > h2 {
+  font-weight: 320;
+  text-align: center;
+   padding: 50px;
+    color: black 
 }
 
-.school_facilities{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Quicksand';
+
+h2 {
+  font-weight: 700;
+  color: salmon;
+  padding-bottom: 30px;
 }
 
-.general_facilities{
-    display: flex;
-    /* align-items: center; */
-    padding-left: 100px;
+.school_facilities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Quicksand';
 }
 
-.gen_fac_content{
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 18px;
-    text-align: center;
+.general_facilities {
+  display: flex;
+  /* align-items: center; */
+  padding-left: 100px;
 }
 
-.academic_facilities{
-    display: flex;
-    align-items: center;
-    padding-left: 100px;
+.gen_fac_content {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+  text-align: center;
 }
 
-.acad_fac_content{
-    /* border: 1px solid; */
-    text-align: center;
-    font-size: 18px;
-    margin-right: 40px;
-    padding-right: 30px;
+.academic_facilities {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
 }
 
-.image_general_fac{
-    padding-right: 30px;
-    padding-top: 24px;
+.acad_fac_content {
+  /* border: 1px solid; */
+  text-align: center;
+  font-size: 18px;
+  margin-right: 40px;
+  padding-right: 30px;
 }
 
-.feel_school_for_you{
-    /* background: url("https://img1.wsimg.com/isteam/stock/329/:/rs=w:1920,m"); */
-    /* mask-image: url("https://img1.wsimg.com/isteam/stock/329/:/rs=w:1920,m"); */
-    padding-top: 56px;
-    padding-bottom: 56px;
-    object-fit: cover;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.9)), url("https://img1.wsimg.com/isteam/stock/329/:/rs=w:1920,m");
-    /* mask-image: rect; */
+.image_general_fac {
+  padding-right: 30px;
+  padding-top: 24px;
 }
+
+.feel_school_for_you {
+  /* background: url("https://img1.wsimg.com/isteam/stock/329/:/rs=w:1920,m"); */
+  /* mask-image: url("https://img1.wsimg.com/isteam/stock/329/:/rs=w:1920,m"); */
+  padding-top: 56px;
+  padding-bottom: 56px;
+  object-fit: cover;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.9)), url("https://img1.wsimg.com/isteam/stock/329/:/rs=w:1920,m");
+  /* mask-image: rect; */
+}
+
+.feelsch_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 273px;
+  text-align: center;
+  margin-left: 120px;
+  padding-left: 24px;
+  margin-right: 120px;
+  padding-right: 24px;
+}
+
+.feel_school_button {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  padding: 8px 16px 8px 16px;
+}
+
+.feel_school_button:hover {
+  border-color: rgb(236, 252, 252);
+  background-color: rgb(236, 252, 252);
+  /* color: black; */
+}
+
+.feel_school_button>button {
+  color: white;
+  font-family: 'Quicksand', 'Courier';
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.feel_school_button:hover>button {
+  color: black;
+}
+
+.feel_btn {
+  color: white;
+}
+
+.feel_btn:hover {
+  color: black;
+}
+
 .feelsch_content{
+  font-family: Quicksand;
+  color: white;
+  font-size: 64px;
+  font-weight: 550;
+  padding-bottom: 25px
+}
+
+.bi-left{
+  margin: 0;
+  padding: 0;
+  padding-right: 5px;
+}
+
+.bi-right{
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+}
+
+
+@media screen and (max-width:800px) {
+  .home_content{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 273px;
-    text-align: center;
-    margin-left: 120px;
-    padding-left: 24px;
-    margin-right: 120px;
-    padding-right: 24px;
-}
+    /* justify-content: space-around; */
+  }
 
-.feel_school_button{
+  .school_facilities > h2{
+    font-weight: 800;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 16px;
+  }
+
+  .home_content_speech {
+    font-size: 12px;
+    padding: 20px;
+    text-align: justify;
+  }
+
+  .home_content_speech>h2 {
+    font-size: 15px;
+  }
+
+  .home_content_login > img{
+    padding-bottom: 25px;
+  }
+
+  .home_content_login_link > h3{
+    font-size: 14px;
+  }
+
+  .general_facilities{
     display: flex;
-    align-items: center;
-    border: 1px solid white;
-    padding: 8px 16px 8px 16px;
-}
+    flex-direction: column;
+    padding: 0;
+    /* justify-content: space-between; */
+  }
+  
+  .gen_fac_content{
+    padding: 0;
+    margin: 0;
+  }
 
-.feel_school_button:hover{
-    border-color: rgb(236, 252, 252);
-    background-color: rgb(236, 252, 252);
-    /* color: black; */
-}
+  .gen_fac_content > p > br{
+    /* text-align: justify; */
+    display: none;
+    /* font-size: 12px; */
+  }
 
-.feel_school_button > button{
-    color: white;
-    font-family: 'Quicksand','Courier';
-    background-color: transparent;
-    border: none;
-    font-size: 17px;
-    font-weight: 600;
-    justify-content: center;
-}
+  .gen_fac_content > p{
+    text-align: justify;
+    line-height: 140%;
+    padding: 10px;
+    padding-top: 5px;
+    font-size: 16px;
+  }
 
-.feel_school_button:hover > button{
-    color: black;
-}
+  .gen_fac_content > h5{
+    margin: 0;
+    padding-top: 25px;
+  }
+  .acad_fac_content{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .acad_fac_content > h5{
+    padding-top: 25px;
+    margin: 0;
+  }
 
-.feel_btn{
-    color: white;
-}
+  .acad_fac_cont_list{
+    margin: 0;
+    padding: 0;
+  }
+  .image_home{
+    width: 100%;
+  }
 
-.feel_btn:hover{
-    color: black;
+  .image_general_fac{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .academic_facilities{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .feelsch_content > h1{
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  .feelsch_content{
+    padding-top: 30px;
+    margin: 50px;  
+  }
+
+  .feel_school_for_you{
+    padding: 0;
+
+  }
 }
