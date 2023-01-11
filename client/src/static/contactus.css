@@ -1,0 +1,25 @@
+.contact-us{
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-us-form{
+    display: inline-block;
+    width: 65%;
+}
+
+.contact-us-form-heading{
+    color: #0d6efd;
+}
+
+.contact-us-section{
+    overflow: auto;
+    display: inline-block;
+    width: 30%;
+    height: 45vh;
+    background-color: #0d6efd;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}

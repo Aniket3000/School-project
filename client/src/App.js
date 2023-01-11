@@ -7,6 +7,8 @@ import Login from './components/Login';
 import Infrastructure from './components/Infrastructure';
 import Academic from './components/Academic';
 import Features from './components/Features';
+import ContactUs from './components/ContactUs';
+import NewsAndEvents from './components/NewsAndEvents';
 
 function App() {
   return (
@@ -16,8 +18,11 @@ function App() {
       <About/>
       {/* <Login /> */}
       {/* <Infrastructure/> */}
+      
       <Features/>
       <Academic/> 
+      <NewsAndEvents/>
+      <ContactUs/>
       <Footer/>
     </div>
   );
