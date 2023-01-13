@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, Outlet } from 'react-router-dom'
 import "../static/header.css"
 
 function Header() {
@@ -30,16 +31,21 @@ function Header() {
           <span style={{fontSize: "11px"}}className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <div className='header_links_cont'>HOME</div>
-          <div className='header_links_cont'>ABOUT US</div>
-          <div className='header_links_cont'>INFRASTRUCTURE</div>
-          <div className='header_links_cont'>ACADEMIC</div>
+          <div className='header_links_cont'><Link to={'/'} preventScrollReset={true} >HOME</Link></div>
+          <div className='header_links_cont'>
+            <Link to={'/about'} preventScrollReset={true} >
+              ABOUT US
+            </Link>
+          </div>
+          <div className='header_links_cont'><Link to={'/infrastructure'} preventScrollReset={true} >INFRASTRUCTURE</Link></div>
+          <div className='header_links_cont'>
+            <Link to={'/academic'} preventScrollReset={true} >ACADEMIC</Link></div>
           <div className='header_links_cont'>ADMISSION 2023</div>
-          <div className='header_links_cont'>PHOTO GALLERY</div>
           <div className='header_links_cont'>CAREERS</div>
-          <div className='header_links_cont'>CONTACT US</div>
+          <div className='header_links_cont'><Link to={'/contactUs'} preventScrollReset={true} >CONTACT US</Link></div>
         </div>
       </nav>
+      <Outlet />
     </div>
   )
 }

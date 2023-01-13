@@ -6,26 +6,56 @@ import Footer from './components/Footer';
 import Login from './components/Login';
 import Infrastructure from './components/Infrastructure';
 import Academic from './components/Academic';
-import Features from './components/Features';
 import ContactUs from './components/ContactUs';
-import NewsAndEvents from './components/NewsAndEvents';
+import {createBrowserRouter, Outlet, Route, Router, RouterProvider, Routes} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      {/* <Home /> */}
-      <About/>
-      {/* <Login /> */}
-      {/* <Infrastructure/> */}
-      
-      <Features/>
-      <Academic/> 
-      <NewsAndEvents/>
-      <ContactUs/>
-      <Footer/>
-    </div>
-  );
+// aise bhi kar sakte
+// export default function App() {
+//   return (
+//     <div className="App">
+//       <Routes>
+//         <Route path='/' element={<><Header /><Home /></>} />
+//         {/* <About/> */}
+//         {/* <Login /> */}
+//         {/* <Infrastructure/> */}
+//         {/* <Academic/>  */}
+//         {/* <ContactUs/> */}
+//       </Routes>
+//     </div>
+//   );
+// }
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: [<Header />,<Home />,<Footer />]
+  },
+  {
+    path: "/about",
+    element: [<Header />,<About />,<Footer />]
+  },
+  {
+    path: "/infrastructure",
+    element: [<Header />,<Infrastructure />,<Footer />]
+  },
+  {
+    path: "/contactUs",
+    element: [<Header />,<ContactUs />,<Footer />]
+  },
+  {
+    path: "/academic",
+    element: [<Header />,<Academic />,<Footer />]
+  },
+  {
+    path: "/login",
+    element: <Login />
+  }
+]);
+
+if (import.meta.hot) {
+  import.meta.hot.dispose(() => router.dispose());
 }
 
-export default App;
+export default function App() {
+  return <RouterProvider router={router} />;
+}

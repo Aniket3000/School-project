@@ -27,11 +27,11 @@
     height: 50%;
 }
 
-.images{
-    max-width:60%;
-    width:400px;
-    height:auto ;
+.images {
+    object-fit: cover;
     /* border-radius: 50%; */
+    width: 30%;
+    height: 30%;
 }
 
 .feature_div {

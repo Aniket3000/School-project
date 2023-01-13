@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "../static/home.css"
 import Features from './Features'
+import NewsAndEvents from './NewsAndEvents'
 
 function Home() {
   return (
@@ -50,7 +52,9 @@ function Home() {
         </div>
         <div className="home_content_login">
           <img src="https://www.sghms.com/images/little_heart_logo.png" alt="..." />
-          <img src="https://www.sghms.com/images/payment.gif" alt="..." />
+          <Link to={'/login'} >
+            <img src="https://www.sghms.com/images/payment.gif" alt="..." />
+          </Link>
           <div className="home_content_login_link">
             <h3>LOGIN</h3>
             <img src="https://www.sghms.com/images/school_pad.png" alt="..." />
@@ -114,6 +118,8 @@ function Home() {
           </a>
         </div>
       </div>
+
+      <NewsAndEvents />
     </div>
   )
 }

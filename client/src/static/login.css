@@ -1,0 +1,133 @@
+.login{
+  background-image: url('./loginIconBg.jpg');
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container_login{
+  padding: 15px;
+}
+
+.wrap_login{
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  margin: auto;
+}
+
+form{
+  padding: 65px 55px 54px 55px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_title{
+  font-family: 'Poppins';
+  font-weight: bolder;
+  font-size: 39px;
+  color: #333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 49px;
+}
+
+.username{
+  font-family: 'Poppins';
+  width: 100%;
+  margin-bottom: 23px;
+}
+
+.password{
+  font-family: 'Poppins';
+  width: 100%;
+  /* margin-bottom: 23px; */
+}
+
+.username_input{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+.password_input{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 10px;  
+}
+
+.userin{
+  border: 0;
+  -webkit-text-stroke: 0.2px;
+}
+
+.passin{
+  border: 0;
+  -webkit-text-stroke: 0.2px;
+}
+
+/* 
+.userin:focus ~ .userstyling{
+  background-color: red;
+  height: 10px;
+} */
+
+input:focus::placeholder{
+  color: transparent;
+}
+
+
+.userstyling{
+  height: 2px;
+  /* transition: 2s; */
+  background-color: #333;
+}
+/* 
+#userinput:focus~#persicon{
+  color: red;
+  font-size: 50px;
+} */
+
+.bi::before{
+  font-size: 20px;
+  color: #333;
+  -webkit-text-stroke: 0.5px;
+  padding: 0;
+}
+
+.forgot_password{
+  text-align: right;
+  padding-bottom: 31px;
+  padding-top: 7px;
+  font-family: 'Poppins';
+  font-size: 14px;
+}
+
+.login_btn{
+  font-family: 'Poppins';
+  font-weight: bolder;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  /* margin-bottom: 49px; */
+  
+}
+
+.login_form_btn{
+  color: white;
+  background: -webkit-linear-gradient(right,#00dbde,#fc00ff,#fc0aaf,#a00ad0);
+  border-radius: 25px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  width: 100%;
+  border: none;
+  -webkit-text-stroke: 0.4px;
+  padding: 10px;
+  left: -100%;
+}
