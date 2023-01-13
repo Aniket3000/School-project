@@ -1,37 +1,41 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../static/login.css'
 
-function Login() {
 
+function Login() {
   return (
     <div className='login'>
-        <div className="login_image">
-            <img src="https://edusecure.in/ManavMangalchandigarh/login/images/bg.jpg" alt="..." />
-        </div>
-        <div className="login_form">
-            <img src="https://edusecure.in/ManavMangalchandigarh/login/images/logo.svg" alt="..." />
-            <select className="form-select one" aria-label="Default select example">
-              <option defaultValue>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <select className="form-select two" aria-label="Default select example">
-              <option defaultValue>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <div className="input-group mb-3">
-              <input type="text" className="form-control" 
-              placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+      <div className="container_login">
+        <div className="wrap_login">
+          <form action="">
+            <span className='form_title'>Login</span>
+            <div className="username">
+              <span style={{fontSize: "14px"}}>Username</span>
+              <div className="username_input">
+                <i id="persicon" className="bi bi-person"></i>
+                <input id="userinput" type="text" 
+                className="form-control userin shadow-none" 
+                placeholder="Type your username" />
+              </div>
+              <hr className='userstyling'></hr>
             </div>
-            <div className="input-group mb-3">
-              <input type="password" className="form-control" 
-              placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" />
+            <div className="password">
+              <span style={{fontSize: "14px"}}>Password</span>
+              <div className="password_input">
+                <span className="material-symbols-outlined">lock</span>
+                <input type="password" className="form-control shadow-none passin" placeholder="Type your password" />
+              </div>
+              <hr className='userstyling'></hr>
             </div>
-            <button type="button" className="btn btn-primary">Login</button>
+            <div className="forgot_password">
+              <span>Forgot password?</span>
+            </div>
+            <div className="login_btn">
+              <button className='login_form_btn'>LOGIN</button>
+            </div>
+          </form>
         </div>
+      </div>
     </div>
   )
 }
