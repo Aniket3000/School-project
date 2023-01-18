@@ -3,9 +3,9 @@ import "../static/infrastructure.css";
 export default function Infrastructure() {
     return (
         <>
-            <div className="heading_image_container">
-                <img className="heading_image" src="https://www.aakashgroup.com/wp-content/uploads/2019/07/school-2-1-1000x500.jpg" />
-                <div className="heading_image_text">Infrastructure</div>
+            <div className="infra_heading_image_container">
+                <img className="infra_heading_image" src="https://www.aakashgroup.com/wp-content/uploads/2019/07/school-2-1-1000x500.jpg" />
+                <div className="infra_heading_image_text">Infrastructure</div>
             </div>
             <div className="infra_info">
                 <p className="infra_sub_info">

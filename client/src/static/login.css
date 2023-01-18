@@ -39,6 +39,7 @@ form{
 .username{
   font-family: 'Poppins';
   width: 100%;
+  margin-top: 18px;
   margin-bottom: 23px;
 }
 
@@ -130,4 +131,10 @@ input:focus::placeholder{
   -webkit-text-stroke: 0.4px;
   padding: 10px;
   left: -100%;
+}
+
+.select_role{
+  font-family: 'Poppins';
+  padding-bottom: 11px;
+  color: #333;
 }

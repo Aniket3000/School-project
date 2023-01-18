@@ -20,9 +20,11 @@ export default function Features() {
     return (
         <>
             <div className="features_heading">FROM PHYSICAL TO DIGITAL CLASSROOM</div>
-            <div className="main_div">
+            <div className="features_main_div">
                 <div className="feature_div">
+                    <div className="img_con">
                         <img className="images" src="https://www.onmanorama.com/content/dam/mm/en/news/campus-reporter/images/2020/10/26/online-class.jpg.transform/845x440/image.jpg" />
+                    </div>
                     <div className="image_info">
                         <h4 className="feature_info_heading">Google Classroom</h4>
                         <p className="feature_info">
@@ -33,7 +35,9 @@ export default function Features() {
                     </div>
                 </div>
                 <div className="feature_div">
+                    <div className="img_con">
                         <img className="images" src="https://www.onmanorama.com/content/dam/mm/en/news/campus-reporter/images/2020/10/26/online-class.jpg.transform/845x440/image.jpg" />
+                    </div>
                     <div className="image_info">
                         <h4 className="feature_info_heading">School Mobile App</h4>
                         <p className="feature_info">Manav mangal has launched the School Mobile App for the convenience of the parents. This Mobile App helps parents have online access to Homework, Attendance, Circulars, School Messages, Announcements, Online Fee Payment, Test / Exam Results and Picture Gallery. The parents have round the clock access to all the above.</p>

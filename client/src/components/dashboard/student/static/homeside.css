@@ -1,0 +1,31 @@
+.nav-homeside-css{
+  height: 12vh;
+  width: 85vw;
+}
+
+.nav-container{
+  z-index: -1;
+  margin-bottom: -1px;
+}
+
+.content-here{
+  z-index: 100;
+  color: black;
+  /* padding-top: -10px; */
+  border: 1px solid black;
+  border-top-left-radius: 25px;
+  background-color: white;
+  padding-left: 10px;
+  margin-right: 10px;
+  height: 86vh;
+  border-bottom-right-radius: 25px;
+}
+
+.content-container{
+  background-color: black;
+  height: 88vh;
+}
+.components{
+  display: flex;
+  flex-direction: column;
+}
