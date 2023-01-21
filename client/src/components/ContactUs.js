@@ -28,14 +28,15 @@ export default function ContactUs() {
                     <textarea name="message" id="message" className="form-control" cols="30" rows="5" placeholder="Write Your Message"></textarea>
                 </div>
                 
-                <div className="col-12">
+                <div className="col-12 align-center">
                     <button type="submit" className="btn btn-primary my-2">Send Message</button>
                 </div>
         
             </form>
 
         </div>
-
+        
+       
         <section className="contact-us-section">
             <h3>Contact Us</h3>
             <p className='my-4'>
@@ -55,6 +56,7 @@ export default function ContactUs() {
                 www.sghms.com
             </p>
         </section>
+        
 
     </div>
 
