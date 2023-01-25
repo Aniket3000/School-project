@@ -7,8 +7,11 @@ import Login from './components/Login';
 import Infrastructure from './components/Infrastructure';
 import Academic from './components/Academic';
 import ContactUs from './components/ContactUs';
-import {Route, Router, RouterProvider, Routes} from 'react-router-dom';
+import {Route, Router, RouterProvider, Routes, BrowserRouter} from 'react-router-dom';
 import StuDashboard from './components/dashboard/student/StuDashboard';
+import Messages from './components/dashboard/student/Messages';
+import Courses from './components/dashboard/student/Courses';
+import Instructors from './components/dashboard/student/Instructors';
 
 export default function App() {
   return (
@@ -19,11 +22,16 @@ export default function App() {
         <Route path='/infrastructure' element={<><Header /><Infrastructure /><Footer /></>} />
         <Route path='/contactUs' element={<><Header /><ContactUs /><Footer /></>} />
         <Route path='/academic' element={<><Header /><Academic /><Footer /></>} />
-        <Route path='/login' element={<><Header /><Login /><Footer /></>} />
+        <Route path='/login' element={<Login />} />
         
         {/* Supposed to be a protected page will change it later first building ui*/}
-        <Route path='/students/dashboard' element={<StuDashboard />} />
-        
+        <Route path='/students'>
+          <Route index path='dashboard' element={<StuDashboard />} />
+          <Route path='messages' element={<Messages />} />
+          <Route path='courses' element = {<Courses />} />
+          <Route path='instructors' element = {<Instructors/>} />
+        </Route>
+
         <Route path="*" element={<>Not Found</>} />
       </Routes>
     </div>

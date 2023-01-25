@@ -1,60 +1,44 @@
 import React from 'react'
 import './static/sidenav.css'
-
+import { Link } from 'react-router-dom'
 
 export default function Sidenav() {
     return (
         <>
             <div className="sidenav_main_div bg-dark">
-                <div className="d-flex flex-column align-items-center align-items-sm-start pt-2 text-white">
-                    <a href="/" className="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <div className="d-flex flex-column align-items-center align-items-sm-start pt-2 ">
+                    <a href="/" className="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-decoration-none">
                         <img src="https://png.pngtree.com/element_pic/00/16/07/115783931601b5c.jpg"
                             alt="..." width="80vw" style={{ padding: '10px', objectFit: 'cover' }} />
                     </a>
                     <ul className="nav nav-pills flex-column align-items-center align-items-sm-start" id="menu">
                         <li>
-                            <a href="#" className="text-white nav-link align-middle mt-4 px-0">
-                                <i className="navitem bi-speedometer2"></i> <span className="navitem ms-1 d-none d-sm-inline">Dashboard</span>
-                            </a>
+                            <Link to="/students/dashboard" className="text-white selected nav-link align-middle mt-4 px-0">
+                                <i className="navitem bi bi-speedometer2"></i> <span className="navitem ms-1 d-none d-sm-inline">Dashboard</span>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#submenu1" className="text-white nav-link px-0 align-middle">
-                                <i className="navitem bi-journal-bookmark"></i> <span className="navitem ms-1 d-none d-sm-inline">Courses</span> </a>
-                            {/* <ul className="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                                <li className="w-100">
-                                    <a href="#" className="text-white nav-link py-2 px-0"> <span className="navitem d-none d-sm-inline">Item</span> 1 </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="text-white nav-link py-2 px-0"> <span className="navitem d-none d-sm-inline">Item</span> 2 </a>
-                                </li>
-                            </ul> */}
+                            <Link to="/students/courses" className="text-white nav-link px-0 align-middle">
+                                <i className="navitem bi bi-journal-bookmark"></i> <span className="navitem ms-1 d-none d-sm-inline">Courses</span> </Link>
                         </li>
                         <li>
-                            <a href="#" className="text-white nav-link px-0 align-middle">
-                                <i className="bi-chat-right-text navitem"></i> <span className="ms-1 d-none d-sm-inline navitem">Messages</span></a>
+                            <Link to="/students/messages" className="text-white nav-link px-0 align-middle">
+                                <i className="bi bi-chat-right-text navitem"></i> <span className="ms-1 d-none d-sm-inline navitem">Messages</span></Link>
                         </li>
                         <li >
-                            <a href="#submenu2" className="text-white nav-link px-0 align-middle ">
-                                <i className="navitem bi-person"></i> <span className="navitem ms-1 d-none d-sm-inline">Instructors</span></a>
-                            {/* <ul className="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                <li className="w-100">
-                                    <a href="#" className="py-2 text-white nav-link px-0"> <span className="navitem d-none d-sm-inline">Item</span> 1</a>
-                                </li>
-                                <li>
-                                    <a href="#" className="py-2 text-white nav-link px-0"> <span className="navitem d-none d-sm-inline">Item</span> 2</a>
-                                </li>
-                            </ul> */}
+                            <Link to="/students/instructors" className="text-white nav-link px-0 align-middle ">
+                                <i className="navitem bi bi-person"></i> <span className="navitem ms-1 d-none d-sm-inline">Instructors</span></Link>
                         </li>
                         <li>
                             <a href="#" className="text-white nav-link px-0 align-middle">
-                                <i className="navitem bi-gear"></i> <span className="navitem ms-1 d-none d-sm-inline ">Settings</span> </a>
+                                <i className="navitem bi bi-gear"></i> <span className="navitem ms-1 d-none d-sm-inline ">Settings</span> </a>
                         </li>
                         <li>
                             <hr />
                         </li>
                         <li>
                             <a href="#" className="text-white nav-link px-0 align-middle">
-                                <i className="navitem bi-box-arrow-left"></i> <span className="navitem ms-1 d-none d-sm-inline ">Log out</span> </a>
+                                <i className="navitem bi bi-box-arrow-left"></i> <span className="navitem ms-1 d-none d-sm-inline ">Log out</span> </a>
                         </li>
                     </ul>
                     {/* <div className="dropdown pb-4">

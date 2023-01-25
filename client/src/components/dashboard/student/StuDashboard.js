@@ -6,7 +6,7 @@ import './static/studash.css'
 function StuDashboard() {
   return (
     <>
-      <div className="ro">   
+      <div className="ro">
         <Sidenav />
         <Homeside />
       </div>

@@ -1,20 +1,43 @@
-.sidenav_main_div{
-    padding-left:2vw;
+.sidenav_main_div {
+    padding-left: 2vw;
     width: 15vw;
-    height:100vh;
+    height: 100vh;
 }
-.navitem{
-    font-size:1vw;
+
+
+.bi::before{
+    color: white;
+}
+
+.navitem {
+    font-size: 1vw;
     margin-top: 10%;
+    color:white
 }
-hr{
+.bi{
+    color:white
+}
+
+hr {
     width: 10vw;
     border: 1px solid rgba(87, 91, 93, 0.978);
 }
 
-@media screen and (max-width:1000px)
-{
-    .navitem{
-        font-size: 1.8vw;
+@media screen and (max-width:1000px) {
+    .navitem {
+        font-size: 1.5vw;
+    }
+    .bi{
+        padding-right:0%;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .bi {
+        font-size: 1.5vw;
+    }
+
+    .sidenav_main_div {
+        padding: 2vw;
     }
 }

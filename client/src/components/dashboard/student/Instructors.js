@@ -1,16 +1,14 @@
 import React from 'react'
-import HomesideMessages from './HomesideMessages'
+import HomesideInstructors from './HomesideInstructors.js'
 import Sidenav from './Sidenav'
 
-function Messages() {
+export default function Instructors() {
   return (
     <>
       <div className="ro">
         <Sidenav />
-        <HomesideMessages />
+        <HomesideInstructors />
       </div>
     </>
   )
 }
-
-export default Messages

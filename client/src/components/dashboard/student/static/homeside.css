@@ -1,14 +1,14 @@
-.nav-homeside-css{
+.nav-homeside-css {
   height: 12vh;
   width: 85vw;
 }
 
-.nav-container{
+.nav-container {
   z-index: -1;
   margin-bottom: -1px;
 }
 
-.content-here{
+.content-here {
   z-index: 100;
   color: black;
   /* padding-top: -10px; */
@@ -21,11 +21,110 @@
   border-bottom-right-radius: 25px;
 }
 
-.content-container{
+.row {
+  width: 100%;
+  margin: 0%;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 45%;
+  object-fit: cover;
+  height: 60px;
+  border-radius: 40%;
+}
+
+.content-container {
   background-color: black;
   height: 88vh;
+  width: 85vw;
 }
-.components{
+
+.components {
   display: flex;
   flex-direction: column;
+}
+
+.sub_cards {
+  margin: 1%;
+  max-width: 17vw;
+  height: auto;
+  margin: 2%;
+  padding: 0%;
+  border: 1px solid black;
+  /* border-radius: 5%; */
+}
+
+.sub_card_title_div {
+  height: auto;
+  width: 100%;
+  margin: 0%;
+}
+
+.sub_card_title {
+  padding: 2%;
+  font-size: 2vw;
+  margin: 0%;
+}
+
+.sub_card_content_div {
+  height: auto;
+  padding: 2%;
+}
+
+.sub_card_text {
+  font-size: 1vw;
+  margin: 0%;
+  padding: 1%;
+}
+
+.sub_card_link {
+  font-size: 1vw;
+  margin: 0%;
+  padding: 1%;
+}
+
+.see_more_courses {
+  display: inline-block;
+  align-self: flex-end;
+  width: auto;
+  margin-bottom: 2%;
+  text-decoration: none;
+  font-size: 1.2vw;
+}
+
+@media screen and (max-width:800px) {
+  .sub_card_title {
+    padding: 5%;
+    font-size: 2.5vw;
+  }
+
+  .see_more_courses {
+    font-size: 1.6vw;
+  }
+
+  .sub_card_text {
+    font-size: 1.2vw;
+  }
+
+}
+
+@media screen and (max-width:500px) {
+  .sub_card_title {
+    font-size: 2.5vw;
+    padding: 5%;
+  }
+
+  .see_more_courses {
+    font-size: 1.7vw;
+  }
+
+  .sub_card_text {
+    font-size: 1.3vw;
+  }
+
+  .sub_cards {
+    margin: 2%;
+    max-width: 20vw;
+  }
 }

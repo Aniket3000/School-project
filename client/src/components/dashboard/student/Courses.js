@@ -1,11 +1,14 @@
 import React from 'react'
+import HomesideCourses from "./HomesideCourses.js"
+import Sidenav from "./Sidenav.js"
 
-function Courses() {
+export default function Courses() {
   return (
     <div>
-      Courses
+      <div className="ro">
+        <Sidenav />
+        <HomesideCourses />
+      </div>
     </div>
   )
 }
-
-export default Courses
